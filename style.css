@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.calc{
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 40px;
+}
+
+.form {
+    width: 320px;
+    border-radius: 14px;
+    border: 1px solid gray;
+    margin: auto;
+    background-color: rgb(48, 39, 46);
+}
+
+/* res */
+input {
+    max-width: 100%;
+    background-color: rgb(33, 64, 110);
+    background-color: transparent;
+    color: white;
+    text-align: right;
+    padding: 15px 30px;
+    font-size: 30px;
+    margin: 10px 0;
+    border: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    height: 83px;
+    border: 1px solid rgba(185, 202, 230, 0.1);
+    background-color: transparent;
+    color: white;
+    font-size: 33px;
+    transition: 0.6s;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgba(53, 46, 52, 0.5);
+    color: rgb(248, 211, 211);
+}
+
+/* equal1 */
+.equal1 {
+    grid-row: span 2;
+    height: 163px;
+    background-color: rgb(94, 12, 245);
+}
+
+.equal:hover {
+    background-color: rgb(94, 12, 245);
+}
+
+/* button 0 */
+.zero {
+    grid-column: span 2;
+}
+
+.the_Operator {
+    background-color: rgb(85, 79, 84);
+    border: 1px solid rgba(187, 190, 196, 0.3);
+}
+
+.the_Operator:hover {
+    background-color: rgba(227, 212, 248, 0.5);
+    color: rgb(167, 161, 167);
+}
+
+.the_number {
+    color: rgb(194, 173, 233);
+}
+
+/* delete */
+.delete {
+    font-size: 28px;
+}
